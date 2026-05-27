@@ -1,0 +1,1 @@
+import{k as n,e as r,j as s}from"./index--Xld8cVg.js";function i(){const{user:e,loading:t}=n();return r.useEffect(()=>{t||(window.location.href=e?"/dashboard":"/login")},[e,t]),s.jsx("div",{className:"flex min-h-screen items-center justify-center text-muted-foreground",children:"Redirecting…"})}export{i as component};
