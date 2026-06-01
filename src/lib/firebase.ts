@@ -11,6 +11,12 @@ const firebaseConfig = {
   measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
+console.log("Firebase Init check:");
+console.log("- API Key exists?", !!firebaseConfig.apiKey);
+console.log("- API Key value starts with:", firebaseConfig.apiKey ? firebaseConfig.apiKey.substring(0, 5) : "UNDEFINED!");
+console.log("- Auth Domain:", firebaseConfig.authDomain);
+
+
 const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
 export default app;
